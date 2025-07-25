@@ -1,19 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Video</title>
+  <meta charset="UTF-8">
+  <title>Video</title>
   <style>
-    html, body { margin: 0; height: 100%; background: black; display: flex; justify-content: center; align-items: center; }
-    iframe { width: 100vw; height: 100vh; border: none; }
+    html, body { margin: 0; height: 100%; background: black; }
+    video { width: 100vw; height: 100vh; object-fit: cover; }
   </style>
 </head>
 <body>
-  <iframe
-    src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1&rel=0&modestbranding=1&controls=0&playsinline=1"
-    allow="autoplay; encrypted-media"
-    allowfullscreen
-  ></iframe>
+  <video autoplay controls playsinline>
+    <source src="https://archive.org/download/SampleVideo1280x7205mb/SampleVideo_1280x720_5mb.mp4" type="video/mp4">
+  </video>
 </body>
 </html>
